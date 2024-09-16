@@ -5,6 +5,6 @@ def puissance(a,b):
       if b > 0:
           return 1
       else:
-         return "Cela n'est pas possible"
+         return False
    else:
       return a**b
