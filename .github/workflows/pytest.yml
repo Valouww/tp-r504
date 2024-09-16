@@ -14,4 +14,4 @@ jobs:
       - name: Run tests
         run: pytest tp1/test.py
       - name: Contexte
-        run : echo "Nom branche : ${{ github.ref }}"
+        run : echo "Nom de la branche :{{ github.ref }}"
