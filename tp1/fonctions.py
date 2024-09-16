@@ -6,14 +6,13 @@ def puissance(a,b):
           return 1
       else:
          return False
-   else:
-      if b != 0:
-         result=1
-         for i in range(abs(b)):
-            result *= a
-         if a < 0 and b < 0:
-            return 1/result
-         else:
-            return result
+   elif b != 0:
+      result=1
+      for i in range(abs(b)):
+         result *= a
+      if a < 0 and b < 0:
+         return 1/result
       else:
-         return 1
+         return result
+   else:
+      return 1
