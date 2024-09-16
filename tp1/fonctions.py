@@ -10,7 +10,7 @@ def puissance(a,b):
       result=1
       for i in range(abs(b)):
          result *= a
-      if a < 0:
+      if a < 0 and b < 0:
          return 1/result
       else:
          return result
