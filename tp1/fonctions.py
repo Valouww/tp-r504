@@ -7,4 +7,7 @@ def puissance(a,b):
       else:
          return False
    else:
-      return a**b
+      result=1
+      for i in range(abs(b)):
+         result *= a
+      return result
