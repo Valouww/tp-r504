@@ -11,3 +11,4 @@ def test_2():
 def test_3():
    assert f.puissance(0,2) == 1
    assert f.puissance(0,-2) == False
+   assert f.puissance(2,0) == 1
