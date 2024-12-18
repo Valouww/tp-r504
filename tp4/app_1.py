@@ -12,10 +12,6 @@ db_config = {
 	'port': '3306'
 }
 
-# Initialize MySQL connection
-conn = mysql.connector.connect(**db_config)
-cursor = conn.cursor() 
-
 
 @app.route('/')
 def index():
