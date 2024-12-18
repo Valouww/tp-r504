@@ -12,6 +12,13 @@ db_config = {
 	'port': '3306'
 }
 
+@app.route('/newuser',methods = ['POST', 'GET'])
+def saisie():
+	if request.method == 'POST':
+		res = request.form.get( "lname" )
+		return res.text()
+
+
 
 @app.route('/')
 def index():
