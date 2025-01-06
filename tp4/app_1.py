@@ -21,7 +21,7 @@ def monForm():
 def saisie():
 	patt1=".{6,}"
 	patt2=".*\d.*"
-	patt3=".*([a-z])*.*[A-Z].*([a-z])*.*"
+	patt3=r'(?=.*[a-z])(?=.*[A-Z]).*'
 	patt4=".*(#|%|\{|\}|@).*" 	
 	if request.method == 'POST':
 		res = request.form.get( "entree" )
